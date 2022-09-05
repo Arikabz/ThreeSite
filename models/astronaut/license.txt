@@ -1,0 +1,11 @@
+Model Information:
+* title:	Astronaut
+* source:	https://sketchfab.com/3d-models/astronaut-720532dec35a47799efe33bcf62fb393
+* author:	Diamondas (https://sketchfab.com/Diamondas)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Astronaut" (https://sketchfab.com/3d-models/astronaut-720532dec35a47799efe33bcf62fb393) by Diamondas (https://sketchfab.com/Diamondas) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
