@@ -27,30 +27,18 @@ const geometry = new THREE.TorusKnotGeometry(5,0.99,39,20, 8, 2)
 const material = new THREE.MeshStandardMaterial({ color: 0x5D3FD3 })
 const torus = new THREE.Mesh( geometry, material)
 
-scene.add(torus);
+//scene.add(torus);
 
-//astronaut
-var model;
 const loader = new GLTFLoader();
-loader.load('models/simple_spaceship/scene.gltf', function (gltf){
-    gltf.scene.position.setZ(1)
-    gltf.scene.position.setY(-4)
-    gltf.scene.position.setX(9)
-    gltf.scene.scale.setX(0.5)
-    gltf.scene.scale.setZ(0.5)
-    gltf.scene.scale.setY(0.5)
-    model = gltf.scene;
-    console.log(gltf.scene)
-}, undefined, function(error){
-    console.error(error)
-})
+//astronaut
+
 
 //planet
 var planet
 loader.load('models/little_planet/scene.gltf', function (gltf){
-    gltf.scene.position.setZ(17)
-    gltf.scene.position.setY(-6)
-    gltf.scene.position.setX(-10)
+    gltf.scene.position.setZ(-5)
+    gltf.scene.position.setY(6)
+    gltf.scene.position.setX(0)
     gltf.scene.scale.setX(0.49)
     gltf.scene.scale.setZ(0.49)
     gltf.scene.scale.setY(0.49)
@@ -63,12 +51,12 @@ loader.load('models/little_planet/scene.gltf', function (gltf){
 //station
 var station
 loader.load('models/space_station/scene.gltf', function (gltf){
-    gltf.scene.position.setZ(7)
-    gltf.scene.position.setY(-6)
-    gltf.scene.position.setX(20)
-    gltf.scene.scale.setX(1)
-    gltf.scene.scale.setZ(1)
-    gltf.scene.scale.setY(1)
+    gltf.scene.position.setZ(8)
+    gltf.scene.position.setY(-4)
+    gltf.scene.position.setX(4)
+    gltf.scene.scale.setX(0.3)
+    gltf.scene.scale.setZ(0.3)
+    gltf.scene.scale.setY(0.3)
     station = gltf.scene
     scene.add(station)
 }, undefined, function(error){
@@ -77,13 +65,14 @@ loader.load('models/space_station/scene.gltf', function (gltf){
 
 //ship
 var ship
-loader.load('models/space_ranger_sr1/scene.gltf', function (gltf){
-    gltf.scene.position.setZ(9)
-    gltf.scene.position.setY(2)
-    gltf.scene.position.setX(-8)
-    gltf.scene.scale.setX(0.3)
-    gltf.scene.scale.setZ(0.3)
-    gltf.scene.scale.setY(0.3)
+loader.load('models/pixel_low_poly_spaceship_3/scene.gltf', function (gltf){
+    gltf.scene.position.setZ(2)
+    gltf.scene.position.setY(-1)
+    gltf.scene.position.setX(-6)
+    gltf.scene.rotation.y = 1.5
+    gltf.scene.scale.setX(0.1)
+    gltf.scene.scale.setZ(0.1)
+    gltf.scene.scale.setY(0.1)
     ship = gltf.scene
     scene.add(ship)
 }, undefined, function(error){
@@ -101,6 +90,7 @@ const Art = new THREE.Mesh(
 )
 
 scene.add(Art)
+Art.position.set(3,3,4)
 
 const pointLight = new THREE.PointLight(0xffffff)
 pointLight.position.set(18,-1.5,18)
@@ -135,19 +125,25 @@ scene.background = bgTexture
 function moveCamera() {
     const t = document.body.getBoundingClientRect().top;
 
-    Art.rotation.x += 0.015;
-    Art.rotation.y += 0.0175;
-    Art.rotation.z += 0.05;
+    Art.rotation.x += 0.0015;
+    Art.rotation.y += 0.00175;
+    Art.rotation.z += 0.005;
 
-    if(model) model.position.z = t * -0.0051 +9
-    if(ship) ship.position.x = t * -0.0061 - 8
+    if(ship) ship.position.x = t * -0.0015 - 6
 
-    if(ship) ship.rotation.x += t * 0.000015
+    if(ship) ship.rotation.x += t * 0.000007
 
 
-    camera.position.z = t * -0.00333 +6;
-    camera.position.x = t * -0.0066;
+    if(t>-1000){
+    camera.position.z = t * 0.0016+6;
+    camera.position.x = t * -0.0016;
     camera.position.y = t * -0.00066 -3;
+    }
+    else{
+    camera.position.z = t * 0.0016+6
+    camera.position.x = t * -0.0016;
+    camera.position.y = t * -0.0016-3; 
+    }
 
 }
 
@@ -160,12 +156,12 @@ function animate () {
     torus.rotation.y += 0.0009
 
     
-    if(ship) ship.rotation.x -= 0.002
+    if(ship) ship.rotation.x -= 0.0008
 
-    if(planet) planet.rotation.y += -0.0029
-    if(planet) planet.rotation.z += 0.0035
+    if(planet) planet.rotation.y += -0.0006
+    //if(planet) planet.rotation.z += 0.0017
 
-    if(station) station.rotation.z -= 0.0011
+    if(station) station.rotation.y -= 0.0003
 
     controls.update();
 

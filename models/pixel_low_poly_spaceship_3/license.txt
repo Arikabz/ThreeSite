@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pixel Low Poly Spaceship 3
+* source:	https://sketchfab.com/3d-models/pixel-low-poly-spaceship-3-8d54be9049ca4aa99041a0936b8e6db2
+* author:	Tony (https://sketchfab.com/tony_zerobudgetgames)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pixel Low Poly Spaceship 3" (https://sketchfab.com/3d-models/pixel-low-poly-spaceship-3-8d54be9049ca4aa99041a0936b8e6db2) by Tony (https://sketchfab.com/tony_zerobudgetgames) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

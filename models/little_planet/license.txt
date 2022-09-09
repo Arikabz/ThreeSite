@@ -1,0 +1,11 @@
+Model Information:
+* title:	Little Planet
+* source:	https://sketchfab.com/3d-models/little-planet-37f059291bbe40aa89e63d788df3fe1f
+* author:	iKuroiNeko (https://sketchfab.com/iKuroiNeko)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Little Planet" (https://sketchfab.com/3d-models/little-planet-37f059291bbe40aa89e63d788df3fe1f) by iKuroiNeko (https://sketchfab.com/iKuroiNeko) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
