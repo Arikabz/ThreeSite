@@ -1,0 +1,11 @@
+Model Information:
+* title:	Space Ranger SR1
+* source:	https://sketchfab.com/3d-models/space-ranger-sr1-c9f86bbff8664954a22bef08545ff1f1
+* author:	Rakshaan (https://sketchfab.com/rakshaan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Space Ranger SR1" (https://sketchfab.com/3d-models/space-ranger-sr1-c9f86bbff8664954a22bef08545ff1f1) by Rakshaan (https://sketchfab.com/rakshaan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
